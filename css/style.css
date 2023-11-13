@@ -154,6 +154,12 @@ td:hover {
     clear: both;
     padding: 10px;
     margin: 0px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: #f2f2f2;
 }
 
 /*  COLUMN SETUP  */
@@ -193,7 +199,7 @@ td:hover {
 }
 
 .span_1_of_2 {
-    width: 47.5%;
+    width: 90%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -250,4 +256,20 @@ td:hover {
 
 #tv4 {
     background-color: orange;
+}
+
+
+.custom-comments {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.comment-section {
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
 }

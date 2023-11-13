@@ -2,395 +2,409 @@
 <html lang="en">
 
 <head>
-    <title>Code Book TV</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="IMG/cb%20tv%20background.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <link rel="stylesheet" href="css/slide.css">
+	<title>Code Book TV</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="IMG/cb%20tv%20background.png">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/slide.css">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-        body,
-        html {
-            background-color: rgba(25, 30, 30, .16);
-            padding: 0px;
-            margin: 0px;
-            height: 100%;
-            font-family: "Lato", sans-serif;
-        }
+		body,
+		html {
+			background-color: rgba(25, 30, 30, .16);
+			padding: 0px;
+			margin: 0px;
+			height: 100%;
+			font-family: "Lato", sans-serif;
+		}
 
-        a {
-            text-decoration-color: floralwhite;
-            text-decoration: none;
-            text-decoration-style: double;
-        }
+		a {
+			text-decoration-color: floralwhite;
+			text-decoration: none;
+			text-decoration-style: double;
+		}
 
-        /*mobile visibility*/
+		/*mobile visibility*/
 
-        @media only screen and (max-width: 1039px) {
-            .mobile-only {
-                visibility: visible;
-            }
-            .nav {
-                display: none;
-            }
-            .t2 {
-                visibility: visible;
-            }
-            .t1 {
-                display: none;
-            }
+		@media only screen and (max-width: 1039px) {
+			.mobile-only {
+				visibility: visible;
+			}
 
-        }
+			.nav {
+				display: none;
+			}
 
-        @media only screen and (min-width: 1040px) {
-            .mobile-only {
-                visibility: hidden;
-            }
-            .nav {
-                visibility: visible;
-                transition: 0.3s;
-            }
+			.t2 {
+				visibility: visible;
+			}
 
-            .t2 {
-                display: none;
-            }
-            .t1 {
-                visibility: visible;
-                transition: 0.10s;
-            }
-        }
-    </style>
+			.t1 {
+				display: none;
+			}
+
+		}
+
+		@media only screen and (min-width: 1040px) {
+			.mobile-only {
+				visibility: hidden;
+			}
+
+			.nav {
+				visibility: visible;
+				transition: 0.3s;
+			}
+
+			.t2 {
+				display: none;
+			}
+
+			.t1 {
+				visibility: visible;
+				transition: 0.10s;
+			}
+		}
+	</style>
 </head>
 
 
 <body>
-    <div class="h11">
-
-        <a href="index.html"> <img src="IMG/cb%20tv%20background.png" alt="" class="profile"></a>
-
+	<div class="h11">
+
+		<a href="index.html"> <img src="IMG/cb%20tv%20background.png" alt="" class="profile"></a>
+
 
-        <div class="mobile-only" style="float: right"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
-        <div class="nav">
-            <table>
-                <td><a href="#">HOME</a></td>
+		<div class="mobile-only" style="float: right"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+		<div class="nav">
+			<table>
+				<td><a href="#">HOME</a></td>
 
-                <td><a href="#">CONTACT</a></td>
-                <td>
-                    <form method="get" action="http://www.google.com/search"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
-                    </form>
-                </td>
-            </table>
+				<td><a href="#">CONTACT</a></td>
+				<td>
+					<form method="get" action="http://www.google.com/search"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
+					</form>
+				</td>
+			</table>
+
+		</div>
+
+	</div>
+	<div class="header">
+
+
+		<div class="section group">
+			<div class="col span_1_of_2">
+
+				<button class="tablink" onclick="openCity('tv1', this, 'gray')" id="defaultOpen">TV1</button>
+				<button class="tablink" onclick="openCity('tv2', this, 'green')">TV2</button>
+				<button class="tablink" onclick="openCity('tv3', this, 'blue')">TV3</button>
+				<button class="tablink" onclick="openCity('tv4', this, 'orange')">TV4</button>
 
-        </div>
 
-    </div>
-    <div class="header">
+				<div id="tv1" class="tabcontent">
+					<iframe width="100%" height="490" src="//ok.ru/videoembed/326274784864?nochat=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<div id="tv2" class="tabcontent">
+
+					<div class="t1">
+
+						<script type='text/javascript'>
+							id = 'sonysixhd';
+							id_width = 650;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
+
+					<div class="t2">
+						<script type='text/javascript'>
+							id = 'sonysixhd';
+							id_width = 400;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
+
+				</div>
 
+				<div id="tv3" class="tabcontent">
 
-        <div class="section group">
-            <div class="col span_1_of_2">
+					<div class="t1">
+						<script type='text/javascript'>
+							id = 'btsp1';
+							id_width = 650;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
 
-                <button class="tablink" onclick="openCity('tv1', this, 'gray')" id="defaultOpen">TV1</button>
-                <button class="tablink" onclick="openCity('tv2', this, 'green')">TV2</button>
-                <button class="tablink" onclick="openCity('tv3', this, 'blue')">TV3</button>
-                <button class="tablink" onclick="openCity('tv4', this, 'orange')">TV4</button>
+					<div class="t2">
+						<script type='text/javascript'>
+							id = 'btsp1';
+							id_width = 400;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
 
+				</div>
 
-                <div id="tv1" class="tabcontent">
-                    <iframe width="100%" height="490" src="//ok.ru/videoembed/326274784864?nochat=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
-                </div>
+				<div id="tv4" class="tabcontent">
 
-                <div id="tv2" class="tabcontent">
+					<div class="t1">
+						<script type='text/javascript'>
+							id = 'willow';
+							id_width = 650;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
 
-                    <div class="t1">
+					<div class="t2">
+						<script type='text/javascript'>
+							id = 'willow';
+							id_width = 400;
+							id_height = 490;
+						</script>
+						<script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
+					</div>
 
-                        <script type='text/javascript'>
-                            id = 'sonysixhd';
-                            id_width = 650;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
+				</div>
 
-                    <div class="t2">
-                        <script type='text/javascript'>
-                            id = 'sonysixhd';
-                            id_width = 400;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
 
-                </div>
+			</div>
 
-                <div id="tv3" class="tabcontent">
 
-                    <div class="t1">
-                        <script type='text/javascript'>
-                            id = 'btsp1';
-                            id_width = 650;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
+<!--
+			<div class="col span_1_of_2">
+				<div class="custom-comments">
+					<h1>Comment Box</h1>
+					<div class="comment-section">
+						<input type="text" id="commentInput" placeholder="Add a comment">
+						<button onclick="addComment()">Add Comment</button>
+						<div id="commentsList"></div>
+					</div>
+				</div>
+				<script src="js/script.js"></script>
+			</div>
+-->
+		</div>
 
-                    <div class="t2">
-                        <script type='text/javascript'>
-                            id = 'btsp1';
-                            id_width = 400;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
+	</div>
 
-                </div>
 
-                <div id="tv4" class="tabcontent">
+	<div class="footer">
+		<hr>
 
-                    <div class="t1">
-                        <script type='text/javascript'>
-                            id = 'willow';
-                            id_width = 650;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
+		<div class="row">
 
-                    <div class="t2">
-                        <script type='text/javascript'>
-                            id = 'willow';
-                            id_width = 400;
-                            id_height = 490;
-                        </script>
-                        <script type='text/javascript' src='http://cdn15.crichd.pk/channel.js'></script>
-                    </div>
+			<div class="column side fot" style="line-height: 23px;">
+				<button class="btn success">CONTACT INFO</button>
+				<p>E-mail : <a href="mailto:webcom@gmail.com">codebooktv@gmail.com</a> </p>
+				<hr>
+				<p> COPYRIGHT © 2017 CODEBOOKTV. ALL RIGHTS RESERVED.</p>
+			</div>
 
-                </div>
+			<div class="column middle fot">
+				<button class="btn success">FOLLOW US</button> <br><br>
+				<hr>
+				<img src="IMG/facebk.svg" alt="" class="social">
+				<img src="IMG/yt.svg" alt="" class="social">
+				<img src="IMG/ig.svg" alt="" class="social">
+				<img src="IMG/pt.svg" alt="" class="social">
+				<img src="IMG/tw.svg" alt="" class="social">
+				<hr>
+				<p>THANK YOU FOR FOLLOW US</p>
+			</div>
 
+			<div class="column side fot">
+				<button class="btn success">ABOUT US</button>
 
-            </div>
+				<p>Live Cricket Streaming and watch cricket online with HD channels. Here you can find Cricket live streaming channels, stats, schedules, fixtures, ranking of T20, ODI and test teams very easily and Watch Football live streaming too</p>
 
 
-            <div class="col span_1_of_2">
+			</div>
 
-                <div class="fb-comments" data-href="https://www.facebook.com/codeebook/" data-width="40%" data-numposts="5"></div>
-            </div>
-        </div>
 
-    </div>
 
 
-    <div class="footer">
-        <hr>
 
-        <div class="row">
 
-            <div class="column side fot" style="line-height: 23px;">
-                <button class="btn success">CONTACT INFO</button>
-                <p>E-mail : <a href="mailto:webcom@gmail.com">codebooktv@gmail.com</a> </p>
-                <hr>
-                <p> COPYRIGHT © 2017 CODEBOOKTV. ALL RIGHTS RESERVED.</p>
-            </div>
+		</div>
 
-            <div class="column middle fot">
-                <button class="btn success">FOLLOW US</button> <br><br>
-                <hr>
-                <img src="IMG/facebk.svg" alt="" class="social">
-                <img src="IMG/yt.svg" alt="" class="social">
-                <img src="IMG/ig.svg" alt="" class="social">
-                <img src="IMG/pt.svg" alt="" class="social">
-                <img src="IMG/tw.svg" alt="" class="social">
-                <hr>
-                <p>THANK YOU FOR FOLLOW US</p>
-            </div>
+		<button id="mytn">Feedback</button>
+	</div>
 
-            <div class="column side fot">
-                <button class="btn success">ABOUT US</button>
 
-                <p>Live Cricket Streaming and watch cricket online with HD channels. Here you can find Cricket live streaming channels, stats, schedules, fixtures, ranking of T20, ODI and test teams very easily and Watch Football live streaming too</p>
 
 
-            </div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>FEEDBACK</h2>
+			</div>
+			<div class="modal-body">
+				<p>First Name</p>
+				<input type="first" id="fname" name="firstname">
+				<p>Last Name</p>
+				<input type="last" id="fname" name="firstname">
+				<p>E-mail</p>
+				<input type="email" id="fname" name="firstname">
 
+				<p>Comments</p>
+				<textarea type="comments" placeholder="Write something.."></textarea>
+				<br>
+				<br>
+				<button class="btn success" style="font-size: 15px;background-color: darkcyan">Submit</button>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
 
+	</div>
 
 
 
-        </div>
 
-        <button id="mytn">Feedback</button>
-    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
 
-
-
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2>FEEDBACK</h2>
-            </div>
-            <div class="modal-body">
-                <p>First Name</p>
-                <input type="first" id="fname" name="firstname">
-                <p>Last Name</p>
-                <input type="last" id="fname" name="firstname">
-                <p>E-mail</p>
-                <input type="email" id="fname" name="firstname">
-
-                <p>Comments</p>
-                <textarea type="comments" placeholder="Write something.."></textarea>
-                <br>
-                <br>
-                <button class="btn success" style="font-size: 15px;background-color: darkcyan">Submit</button>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#">HOME</a>
-            <a href="#">CONACT</a>
-            <a href="#">
-                <form method="get" action="http://www.google.com/search" style="width: 100%"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
-                </form>
-            </a>
-        </div>
-
-    </div>
-
-    <!---mobile navigation-->
-
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
-    </script>
-
-    <!---slide script-->
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
-        }
-    </script>
-
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("mytn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <script>
-        function openCity(cityName, elmnt, color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(cityName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-
-        }
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">HOME</a>
+			<a href="#">CONACT</a>
+			<a href="#">
+				<form method="get" action="http://www.google.com/search" style="width: 100%"> <input type="text" name="q" placeholder="Google Search.." size="49" maxlength="255" value="" />
+				</form>
+			</a>
+		</div>
+
+	</div>
+
+	<!---mobile navigation-->
+
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+
+	<!---slide script-->
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 3000); // Change image every 2 seconds
+		}
+	</script>
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("mytn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<script>
+		function openCity(cityName, elmnt, color) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+			document.getElementById(cityName).style.display = "block";
+			elmnt.style.backgroundColor = color;
+
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
 
 </body>
 
